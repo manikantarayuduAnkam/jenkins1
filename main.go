@@ -1,6 +1,6 @@
 package main
 
-import "github.com/aristat/golang-example-app/cmd"
+import "github.com/manikantarayuduAnkam/jenkins1"
 
 func main() {
 	cmd.Execute()

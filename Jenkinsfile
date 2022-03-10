@@ -26,7 +26,7 @@ pipeline {
             }
             steps {
                 script {
-                    docker.withRegistry('', 'docker-hub') {
+                    docker.withRegistry('', 'dockerhub') {
                         def customImage = docker.build("manikantarayudu/jenkins:$VERSION_MAJOR.$VERSION_MINOR.$VERSION_PATCH")
                         customImage.push()
                     }
